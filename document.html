@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Portfolio</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+</head>
+<style>
+    ul{
+        font-family: Arial, Helvetica, sans-serif;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1a1a1a;
+    }
+    li{
+        float: left;
+    }
+    li a{
+        display: block;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        transition: transform .4s;
+    }
+    li a:hover{
+        background-color: #000;
+        transform: scale(1.2);
+    }
+    .brand{
+        float: right;
+    }
+    .brand a{
+        display: block;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        transition: transform .4s;
+    }
+    .btn:hover{
+  transform: scale(1.2);
+}
+ 
+ .container{
+    padding: 30px;
+ }
+ .two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+h2{
+    text-align: center;
+}
+</style>
+
+<body style="background-image: url(img/cp.jpg);">
+    <section>
+        <ul>
+            <li><a href="home.html">Home</a></a></li>
+            <li><a href="about.html">About Me</a></a></li>
+            <li><a href="document.html">Document</a></a></li>
+            <li><a href="reference.html">Reference</a></a></li>
+            <li><a href="gallery.html">Gallery</a></a></li>
+            <li><a href="contact.html">Contact</a></a></li>
+
+            <div class="brand">
+                <li><a href="#" class="btn">Esther A. Cudjoe</a></li>
+                <li><a href="#" class="btn">BC/ICT/21/092</a></li>
+            </div>
+        </ul>
+    </section>
+    <h2>D O C U M E N T S</h2>
+    <div class="two-column-wrapper">
+        <div class="container">
+            <embed src="file/certificate.pdf" type="application/pdf" width="100%" height="600px"></embed>
+        </div>
+        <div class="container">
+            <embed src="file/certificate2.pdf" type="application/pdf" width="100%" height="600px"></embed>
+        </div>
+        <div class="container">
+            <embed src="file/business card.pdf" type="application/pdf" width="100%" height="600px"></embed>
+        </div>
+        <div class="container">
+            <embed src="file/Sample CV pdf.pdf" type="application/pdf" width="100%" height="600px"></embed>
+        </div>
+    </div>
+    
+
+</body>
+
+
+
+
+
+
+
+</html>

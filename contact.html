@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Portfolio</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+</head>
+<style>
+    ul{
+        font-family: Arial, Helvetica, sans-serif;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1a1a1a;
+    }
+    li{
+        float: left;
+    }
+    li a{
+        display: block;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        transition: transform .4s;
+    }
+    li a:hover{
+        background-color: #000;
+        transform: scale(1.2);
+    }
+    .brand{
+        float: right;
+    }
+    .brand a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .btn{
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 14px 16px;
+  border-radius: 30px;
+  transition: transform .4s;
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+    * {
+  box-sizing: border-box;
+}
+    input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+
+<body style="background-image: url(img/cp.jpg);">
+    <section>
+        <ul>
+            <li><a href="home.html">Home</a></a></li>
+            <li><a href="about.html">About Me</a></a></li>
+            <li><a href="document.html">Document</a></a></li>
+            <li><a href="reference.html">Reference</a></a></li>
+            <li><a href="gallery.html">Gallery</a></a></li>
+            <li><a href="contact.html">Contact</a></a></li>
+
+            <div class="brand">
+                <li><a href="#" class="btn">Esther A. Cudjoe</a></li>
+                <li><a href="#" class="btn">BC/ICT/21/092</a></li>
+            </div>
+        </ul>
+    </section>
+
+</body>
+
+<div class="container">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>Swing by for a cup of coffee, or leave us a message:</p>
+    </div>
+    <div class="row">
+      <div class="column"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=takoradi technical university&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.kokagames.com/fnf-friday-night-funkin-mods/">FNF</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input class="btn btn-submit" type="submit" value="Submit" />
+          <small>or press <strong>enter</strong></small>
+          <input class="btn btn-reset" type="reset" value="Reset">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</html>
